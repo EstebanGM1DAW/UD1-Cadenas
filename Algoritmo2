@@ -1,0 +1,23 @@
+Algoritmo contarMismoCaracter
+	Definir cad, letra, igualar Como Cadena
+	Definir cont, suma, long Como Entero
+	suma <- 0
+	Escribir 'Dame una cadena: '
+	Leer cad
+	cad <- Minusculas(cad)
+	Escribir 'Que letra quieres buscar: '
+	Leer letra
+	letra <- Minusculas(letra)
+	long <- Longitud(letra)
+	Si long=1 Entonces
+		Para cont<-1 Hasta Longitud(cad) Con Paso 1 Hacer
+			igualar <- SubCadena(cad,cont,cont)
+			Si letra=igualar Entonces
+				suma <- suma+1
+			FinSi
+		FinPara
+		Escribir 'La letra aparece: ', suma, ' veces.'
+	SiNo
+		Escribir 'Solo un caracter.'
+	FinSi
+FinAlgoritmo
