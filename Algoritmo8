@@ -1,0 +1,15 @@
+Algoritmo IntercambiarMayusYminus
+	Escribir "Dame una cadena: "
+	Leer cad
+	Para cont<-0 Hasta longitud(cad) Con Paso 1 Hacer
+		letra = subcadena(cad,cont,cont)
+		Si letra = Mayusculas(letra) Entonces
+			frasefinal = concatenar(frasefinal,minusculas(letra))
+		SiNo
+			Si letra= Minusculas(letra) Entonces
+				frasefinal = concatenar(frasefinal, Mayusculas(letra))
+			FinSi
+		FinSi
+	FinPara
+	Escribir frasefinal
+FinAlgoritmo
