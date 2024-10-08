@@ -1,0 +1,8 @@
+Algoritmo Caracterde1en1
+	Escribir 'Dame una cadena: '
+	Leer cad
+	Para cont<-0 Hasta longitud(cad) Con Paso 1 Hacer
+		letra <- subcadena(cad,cont,cont)
+		Escribir letra
+	FinPara
+FinAlgoritmo
