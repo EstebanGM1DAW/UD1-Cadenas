@@ -1,0 +1,12 @@
+Algoritmo invertirCadena
+	Definir frase, fraseinv, letra Como Caracter
+	Escribir 'Dime una frase: '
+	Leer frase
+	longi = longitud(frase)
+	Repetir
+		longi = longi - 1
+		letra = subcadena(frase,longi,longi)
+		fraseinv = fraseinv + letra
+	Hasta Que longi=0
+	Escribir fraseinv
+FinAlgoritmo
