@@ -1,0 +1,12 @@
+Algoritmo contarPalabras
+	espacios = 1
+	Escribir "Dame una frase: "
+	Leer frase
+	Para cont<-1 Hasta longitud(frase) Con Paso 1 Hacer
+		letra = subcadena(frase,cont,cont)
+		Si letra = " " Entonces
+			espacios = espacios + 1
+		FinSi
+	FinPara
+	Escribir "Hay " espacios " palabras."
+FinAlgoritmo
