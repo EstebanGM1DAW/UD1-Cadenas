@@ -1,0 +1,13 @@
+Algoritmo iniciales
+	Definir inicial Como Caracter
+	Escribir 'Dime tu nombre completo: '
+	Leer frase
+	inicial=subcadena(frase,0,0)
+	Para cont<-1 Hasta longitud(frase) Con Paso 1 Hacer
+		letra <- subcadena(frase,cont,cont)
+		Si letra=' ' Entonces
+			inicial = Concatenar(inicial,subcadena(frase,cont+1,cont+1))
+		FinSi
+	FinPara
+	Escribir 'Hay tus iniciales son : ' Mayusculas(inicial)
+FinAlgoritmo
