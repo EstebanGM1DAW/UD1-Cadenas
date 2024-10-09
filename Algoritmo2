@@ -1,0 +1,23 @@
+Algoritmo ComprobarSubcadena
+	Definir cad, subcad, fragmento Como Cadena
+	Definir i, longCad, longSubcad Como Entero
+	Definir encontrada Como Lógico
+	encontrada <- Falso
+	Escribir 'Introduce una cadena: '
+	Leer cad
+	Escribir 'Introduce una subcadena: '
+	Leer subcad
+	longCad <- Longitud(cad)
+	longSubcad <- Longitud(subcad)
+	Para i<-1 Hasta longCad-longSubcad+1 Con Paso 1 Hacer
+		fragmento <- SubCadena(cad,i,i+longSubcad-1)
+		Si fragmento=subcad Entonces
+			encontrada <- Verdadero
+		FinSi
+	FinPara
+	Si encontrada Entonces
+		Escribir 'La cadena contiene la subcadena.'
+	SiNo
+		Escribir 'La cadena NO contiene la subcadena.'
+	FinSi
+FinAlgoritmo
