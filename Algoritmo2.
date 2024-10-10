@@ -1,0 +1,14 @@
+Algoritmo ComprobarSubcadena
+    Definir cad, subcad Como Cadena
+    Definir inicio Como Cadena
+    Escribir "Introduce una cadena: "
+    Leer cad
+    Escribir "Introduce una subcadena: "
+    Leer subcad
+    inicio <- SubCadena(cad, 0, Longitud(subcad)-1)
+    Si inicio = subcad Entonces
+        Escribir "La cadena comienza con la subcadena."
+    SiNo
+        Escribir "La cadena NO comienza con la subcadena."
+    FinSi
+FinAlgoritmo
