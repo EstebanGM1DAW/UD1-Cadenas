@@ -10,7 +10,7 @@ Algoritmo contarMismoCaracter
 	letra <- Minusculas(letra)
 	long <- Longitud(letra)
 	Si long=1 Entonces
-		Para cont<-1 Hasta Longitud(cad) Con Paso 1 Hacer
+		Para cont<-0 Hasta Longitud(cad) Con Paso 1 Hacer
 			igualar <- SubCadena(cad,cont,cont)
 			Si letra=igualar Entonces
 				suma <- suma+1
